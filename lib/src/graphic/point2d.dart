@@ -41,7 +41,7 @@ class Point2D
   /**
    * Operator that returns a [bool] true if the [other] [Point2D] has the same values as this.
    */
-  operator ==( Point2D other ) => x == other.x && y == other.y;
+  operator ==(covariant Point2D other) => x == other.x && y == other.y;
   /**
    * Operator that sums 2 [Point2D]s and returns the resulting [Point2D].
    */

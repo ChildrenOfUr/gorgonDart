@@ -8,7 +8,7 @@ import 'dart:async';
 
 main()
 {
-  Display display = new Display( query("#display"), width: 640, height: 480 );
+  Display display = new Display( querySelector("#display"), width: 640, height: 480 );
   Spritepack sp = new Spritepack.fromJSON("resources/chico/chico.json");
   Animationpack ap = new Animationpack.fromJSON("resources/chico/chico_animationpack.json");
   Sound normal = new Sound(soundUrl: "resources/chico/attack.wav");

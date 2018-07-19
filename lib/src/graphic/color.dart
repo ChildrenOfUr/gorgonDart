@@ -72,5 +72,5 @@ class Color
   /**
    * Operator that checks if 2 [Color]s are have the same values.
    */
-  operator ==(Color other) => r == other.r && g == other.g && b == other.b && a == other.a;
+  operator ==(covariant Color other) => r == other.r && g == other.g && b == other.b && a == other.a;
 }

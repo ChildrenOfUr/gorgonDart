@@ -151,8 +151,8 @@ void main()
         Point2D c = new Point2D( 0.0, 0.0 );
 
         expect( a / a, equals(new Point2D( 1.0, 1.0 )) );
-        expect( a / b, equals(new Point2D( 5.0, double.INFINITY )) );
-        expect( a / c, equals(new Point2D( double.INFINITY, double.INFINITY )) );
+        expect( a / b, equals(new Point2D( 5.0, double.infinity )) );
+        expect( a / c, equals(new Point2D( double.infinity, double.infinity)) );
 
         expect( b / a, equals(new Point2D( 0.2, 0.0 )) );
         /// @todo Correct these tests Once Dart can evaluate NaN == NaN or thrown an exception.

@@ -139,7 +139,7 @@ class Sprite
   {
     CanvasElement canvas = new CanvasElement(width: height, height: width);
     canvas.context2D.translate( height, 0 );
-    canvas.context2D.rotate( 90 * PI / 180 );
+    canvas.context2D.rotate( 90 * pi / 180 );
     canvas.context2D.drawImageToRect( _image, new Rectangle(0,0,width,height),sourceRect: _bounds);
 
 
@@ -158,7 +158,7 @@ class Sprite
   {
     CanvasElement canvas = new CanvasElement(width: height, height: width);
     canvas.context2D.translate( 0, width );
-    canvas.context2D.rotate( -90 * PI / 180 );
+    canvas.context2D.rotate( -90 * pi / 180 );
     canvas.context2D.drawImageToRect( _image, new Rectangle(0,0,width,height),sourceRect: _bounds);
 
     num x    = offset.x;
@@ -244,7 +244,7 @@ class Sprite
    *
    * **Warning** This operator will check every image pixel.
    */
-  operator == (Sprite other)
+  operator == (covariant Sprite other)
   {
     if( width == other.width && height == other.height && offset == other.offset)
     {

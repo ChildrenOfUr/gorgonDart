@@ -229,22 +229,22 @@ class Display
       {
         case Mirroring.H:
             _canvas.context2D.scale( -scale, scale );
-            _canvas.context2D.rotate( -rotation * PI / 180 );
+            _canvas.context2D.rotate( -rotation * pi / 180 );
           break;
 
         case Mirroring.V:
             _canvas.context2D.scale( scale, -scale );
-            _canvas.context2D.rotate( -rotation * PI / 180 );
+            _canvas.context2D.rotate( -rotation * pi / 180 );
           break;
 
         case Mirroring.HV:
           _canvas.context2D.scale( -scale, -scale );
-          _canvas.context2D.rotate( rotation * PI / 180 );
+          _canvas.context2D.rotate( rotation * pi / 180 );
           break;
 
         case Mirroring.None:
             _canvas.context2D.scale( scale, scale );
-            _canvas.context2D.rotate( rotation * PI / 180 );
+            _canvas.context2D.rotate( rotation * pi / 180 );
           break;
       }
       _canvas.context2D.translate( sprite.offset.x , sprite.offset.y );
