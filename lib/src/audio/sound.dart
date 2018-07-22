@@ -18,7 +18,7 @@ class Sound
   AudioBuffer _buffer;
 
   /// The onLoad Future.
-  Future<Sound> _onLoad = new Completer().future;
+  Future<Sound> _onLoad = new Completer<Sound>().future;
 
   /// Returns the Future that is triggered when  the sound is loaded.
   Future<Sound> get onLoad => _onLoad;
@@ -65,7 +65,7 @@ class Sound
    */
   Future<Sound> load( String soundUrl )
   {
-    Completer completer   = new Completer();
+    Completer<Sound> completer = new Completer();
     HttpRequest request   = new HttpRequest();
     request.responseType  = "arraybuffer";
 
